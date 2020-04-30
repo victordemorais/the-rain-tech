@@ -1,13 +1,15 @@
 import React from 'react';
 import Home from 'pages/Home';
-import GlobalStyle from './styles/global';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from 'styles/global';
+import Theme from 'styles/theme';
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={Theme}>
       <GlobalStyle />
       <Home />
-    </>
+    </ThemeProvider>
   );
 }
 

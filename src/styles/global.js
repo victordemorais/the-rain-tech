@@ -7,7 +7,8 @@ export default createGlobalStyle`
     box-sizing: border-box;
   },
   html, body, #root {
-    min-height:100%
+    min-height:100%;
+    font-family: 'Roboto', sans-serif;
   },
   body:{
     background:#fff;
