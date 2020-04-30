@@ -1,11 +1,23 @@
 import React from 'react';
 import { PageContent } from 'components/Page';
 import LogoGorila from 'assets/images/logo-gorila.png';
+import Facebook from 'assets/images/social/facebook.png';
+import Linkedin from 'assets/images/social/linkedin.png';
+import Google from 'assets/images/social/google.png';
 import Text from 'components/Text';
 import { withTheme } from 'styled-components';
 import { Input } from 'components/Input';
 import Button from 'components/Button';
-import { Logo, BoxCall, Call, Spacing } from './styles';
+import {
+  Logo,
+  BoxCall,
+  Call,
+  Spacing,
+  BoxButtons,
+  SocialGroup,
+  SocialIcon,
+  SocialGroupText,
+} from './styles';
 
 const Header = ({ theme }) => {
   return (
@@ -30,15 +42,27 @@ const Header = ({ theme }) => {
         <Spacing />
         <Input placeHolder="Email" />
         <Spacing />
-        <Button
-          value="Quero lucrar com meus investimentos"
-          textStyles={{
-            bold: true,
-            color: theme.colors.blank,
-            size: 16,
-          }}
-          onClick={() => alert('oi')}
-        />
+        <BoxButtons>
+          <Button
+            value="Quero lucrar com meus investimentos"
+            textStyles={{
+              bold: true,
+              color: theme.colors.blank,
+              size: 16,
+            }}
+            onClick={() => alert('oi')}
+          />
+          <SocialGroupText>
+            <Text light color={theme.colors.gray} size={13}>
+              Conecte-se com
+            </Text>
+            <SocialGroup>
+              <SocialIcon src={Google} />
+              <SocialIcon src={Linkedin} />
+              <SocialIcon src={Facebook} />
+            </SocialGroup>
+          </SocialGroupText>
+        </BoxButtons>
       </BoxCall>
     </PageContent>
   );
