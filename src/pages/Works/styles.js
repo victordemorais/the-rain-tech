@@ -9,6 +9,9 @@ export const Arround = styled.div`
   position: relative;
   background: ${Theme.colors.primary};
   padding: 40px 0px;
+  @media (max-width: 768px) {
+    margin-top: 540px;
+  }
 `;
 
 export const ArroundBorder = styled.div`
@@ -22,6 +25,10 @@ export const ArroundBorder = styled.div`
   width: 100%;
   transform: ${(props) => (props.bottom ? '' : 'rotate(180deg)')};
   position: absolute;
+  @media (max-width: 768px) {
+    top: ${(props) => (props.bottom ? 'initial' : '-10px')};
+    bottom: ${(props) => (props.bottom ? '-10px' : 'initial')};
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -40,17 +47,23 @@ export const Statistcs = styled.div`
   height: 440px;
   width: 440px;
   background-size: contain;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const GirlMoney = styled.div`
   background: url(${Girl}) no-repeat;
   position: absolute;
   z-index: -1;
-  right: -200px;
-  top: -620px;
-  height: 800px;
-  width: 900px;
+  top: -540px;
+  height: 600px;
+  width: 100%;
+  background-position: right;
   background-size: contain;
+  @media (max-width: 768px) {
+    background-position: center;
+  }
 `;
 
 export const GroupText = styled.div`
@@ -60,6 +73,10 @@ export const GroupText = styled.div`
   flex: 1;
   flex-direction: column;
   max-width: 600px;
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const Spacing = styled.div`

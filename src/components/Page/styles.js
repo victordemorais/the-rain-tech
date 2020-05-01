@@ -11,4 +11,10 @@ export const Content = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;

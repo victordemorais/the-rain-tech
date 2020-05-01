@@ -11,6 +11,9 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 300px;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const WrapperText = styled.div`

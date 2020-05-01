@@ -6,6 +6,9 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 300px;
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
 `;
 
 export const Spacing = styled.div`

@@ -8,5 +8,9 @@ export const Font = styled.span`
     ${props.light && 'font-weight: 300'};
     ${props.size && `font-size: ${props.size}px`};
     ${props.color && `color: ${props.color}`};
+
+    @media (max-width: 768px) {
+    ${props.size && `font-size: ${props.size * 0.8}px`};
+    }
   `}
 `;

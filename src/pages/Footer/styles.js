@@ -9,12 +9,23 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 120px;
+  @media (max-width: 768px) {
+    margin-top: 80px;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+  }
 `;
 
 export const WrapperCollumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${(props) => (props.start ? 'flex-start' : 'flex-end')};
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 `;
 
 export const Gorila = styled.div`
