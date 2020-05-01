@@ -7,4 +7,6 @@ export const PageContent = ({ children }) => (
   </Container>
 );
 
-export const Page = ({ children }) => <Container>{children}</Container>;
+export const Page = ({ children, backgroundColor }) => (
+  <Container backgroundColor={backgroundColor}>{children}</Container>
+);

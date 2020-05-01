@@ -23,7 +23,19 @@ export const ButtonPrimary = styled.input.attrs((props) => ({
   -o-transition: 0.18s ease-out;
   transition: 0.18s ease-out;
 
-  ${({ textStyles }) => `
+  ${({ buttonStyles }) =>
+    buttonStyles &&
+    `
+  ${buttonStyles.background && `background-color: ${buttonStyles.background}`};
+  ${buttonStyles.height && `height: ${buttonStyles.height}px`};
+  ${buttonStyles.width && `width: ${buttonStyles.width}px`};
+  ${buttonStyles.boxShadow && `box-shadow: ${buttonStyles.boxShadow}`};
+
+`}
+
+  ${({ textStyles }) =>
+    textStyles &&
+    `
   ${textStyles.regular && 'font-weight: 400'};
   ${textStyles.bold && 'font-weight: bold'};
   ${textStyles.light && 'font-weight: 300'};

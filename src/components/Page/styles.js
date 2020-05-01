@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  ${(props) => `
+    ${props.backgroundColor && `background-color:${props.backgroundColor};`}
+  `}
   width: 100%;
 `;
 
