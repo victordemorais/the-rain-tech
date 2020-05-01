@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.389043cf.chunk.js",
+    "main.js.map": "/static/js/main.389043cf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.be482c98.js",
+    "runtime-main.js.map": "/static/js/runtime-main.be482c98.js.map",
+    "static/js/2.ece0e16a.chunk.js": "/static/js/2.ece0e16a.chunk.js",
+    "static/js/2.ece0e16a.chunk.js.map": "/static/js/2.ece0e16a.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8ab9478e2d6cfd8a9c102e27c23f4828.js": "/precache-manifest.8ab9478e2d6cfd8a9c102e27c23f4828.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.ece0e16a.chunk.js.LICENSE.txt": "/static/js/2.ece0e16a.chunk.js.LICENSE.txt",
+    "static/media/banner-money.png": "/static/media/banner-money.b16bf92e.png",
+    "static/media/girlMoney.png": "/static/media/girlMoney.7c178873.png",
+    "static/media/statistics.png": "/static/media/statistics.5578440c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.be482c98.js",
+    "static/js/2.ece0e16a.chunk.js",
+    "static/js/main.389043cf.chunk.js"
+  ]
+}
