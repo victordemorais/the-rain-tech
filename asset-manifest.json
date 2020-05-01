@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.389043cf.chunk.js",
-    "main.js.map": "/static/js/main.389043cf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.be482c98.js",
-    "runtime-main.js.map": "/static/js/runtime-main.be482c98.js.map",
-    "static/js/2.ece0e16a.chunk.js": "/static/js/2.ece0e16a.chunk.js",
-    "static/js/2.ece0e16a.chunk.js.map": "/static/js/2.ece0e16a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.8ab9478e2d6cfd8a9c102e27c23f4828.js": "/precache-manifest.8ab9478e2d6cfd8a9c102e27c23f4828.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.ece0e16a.chunk.js.LICENSE.txt": "/static/js/2.ece0e16a.chunk.js.LICENSE.txt",
-    "static/media/banner-money.png": "/static/media/banner-money.b16bf92e.png",
-    "static/media/girlMoney.png": "/static/media/girlMoney.7c178873.png",
-    "static/media/statistics.png": "/static/media/statistics.5578440c.png"
+    "main.js": "/the-rain-tech/static/js/main.01767980.chunk.js",
+    "main.js.map": "/the-rain-tech/static/js/main.01767980.chunk.js.map",
+    "runtime-main.js": "/the-rain-tech/static/js/runtime-main.38fcbebe.js",
+    "runtime-main.js.map": "/the-rain-tech/static/js/runtime-main.38fcbebe.js.map",
+    "static/js/2.218b398f.chunk.js": "/the-rain-tech/static/js/2.218b398f.chunk.js",
+    "static/js/2.218b398f.chunk.js.map": "/the-rain-tech/static/js/2.218b398f.chunk.js.map",
+    "index.html": "/the-rain-tech/index.html",
+    "precache-manifest.ac82437095f50aad504d0a58e00a2dc7.js": "/the-rain-tech/precache-manifest.ac82437095f50aad504d0a58e00a2dc7.js",
+    "service-worker.js": "/the-rain-tech/service-worker.js",
+    "static/js/2.218b398f.chunk.js.LICENSE.txt": "/the-rain-tech/static/js/2.218b398f.chunk.js.LICENSE.txt",
+    "static/media/banner-money.png": "/the-rain-tech/static/media/banner-money.b16bf92e.png",
+    "static/media/girlMoney.png": "/the-rain-tech/static/media/girlMoney.7c178873.png",
+    "static/media/statistics.png": "/the-rain-tech/static/media/statistics.5578440c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.be482c98.js",
-    "static/js/2.ece0e16a.chunk.js",
-    "static/js/main.389043cf.chunk.js"
+    "static/js/runtime-main.38fcbebe.js",
+    "static/js/2.218b398f.chunk.js",
+    "static/js/main.01767980.chunk.js"
   ]
 }
