@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/the-rain-tech/precache-manifest.ac82437095f50aad504d0a58e00a2dc7.js"
+  "/the-rain-tech/precache-manifest.75c60ec5cc6aa70378796c50d5891fb0.js"
 );
 
 self.addEventListener('message', (event) => {
