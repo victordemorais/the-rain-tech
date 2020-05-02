@@ -10,7 +10,13 @@ const Theme = {
     blank: '#fff',
     background: '#F4F7FC',
     border: '#EAE9EE',
-    menuSelected: '#20B5B9',
+    primary: '#20B5B9',
+    gray: '#7F7F7F',
+    gradient: {
+      red: '#B92020, #D95151',
+      yellow: '#FFAE0D, #D95151',
+      green: '#20B5B9, #51D99B',
+    },
   },
 };
 

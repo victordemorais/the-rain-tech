@@ -43,11 +43,18 @@ export const MenuLink = styled(Link)`
   color: #000;
   text-align: left;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 1px;
   padding-left: 120px;
   margin-bottom: 10px;
+  -webkit-transition: 0.18s ease-out;
+  -moz-transition: 0.18s ease-out;
+  -o-transition: 0.18s ease-out;
+  transition: 0.18s ease-out;
+  &:hover {
+    color: ${Theme.admin.primary};
+  }
   ${(props) =>
-    props.selected && `border-right: 6px solid ${Theme.admin.menuSelected};`}
+    props.selected && `border-right: 6px solid ${Theme.admin.primary};`}
 `;
 
 export const Nav = styled.div`
@@ -55,4 +62,8 @@ export const Nav = styled.div`
   background-color: ${Theme.admin.blank};
   width: width:100%;
   border-bottom: 1px solid ${Theme.admin.border};
+`;
+
+export const Title = styled.div`
+  margin-bottom: 20px;
 `;
