@@ -1,6 +1,6 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
-import { Page } from 'components/Page';
+import { Page, PageContent } from 'components/Page';
 import Text from 'components/Text';
 import Button from 'components/Button';
 import {
@@ -12,7 +12,6 @@ import {
   GirlMoney,
   Spacing,
 } from './styles';
-import { PageContent } from '../../components/Page';
 
 const Works = ({ theme }) => {
   return (

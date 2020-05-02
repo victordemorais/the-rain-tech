@@ -1,14 +1,14 @@
 import React from 'react';
-import Home from 'pages/Home';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from 'styles/global';
 import Theme from 'styles/theme';
+import { Routes } from './routes';
 
 function App() {
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
-      <Home />
+      <Routes />
     </ThemeProvider>
   );
 }
