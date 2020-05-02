@@ -6,6 +6,12 @@ const Theme = {
     gray: '#BEBEBE',
     gray2: '#9E9E9E',
   },
+  admin: {
+    blank: '#fff',
+    background: '#F4F7FC',
+    border: '#EAE9EE',
+    menuSelected: '#20B5B9',
+  },
 };
 
 export default Theme;

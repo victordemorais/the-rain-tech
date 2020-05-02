@@ -1,0 +1,30 @@
+{
+  "acessor": [
+    {
+      "name": "Dashboard",
+      "route": "/dashboard"
+    },
+    {
+      "name": "Usuários",
+      "route": "/users"
+    },
+    {
+      "name": "Agenda",
+      "route": "/schedules"
+    }
+  ],
+  "user": [
+    {
+      "name": "Dashboard",
+      "route": "/dashboard"
+    },
+    {
+      "name": "Investidores",
+      "route": "/investors"
+    },
+    {
+      "name": "Agenda",
+      "route": "/schedules"
+    }
+  ]
+}

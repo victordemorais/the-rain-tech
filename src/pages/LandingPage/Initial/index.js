@@ -1,18 +1,12 @@
 import React from 'react';
 import { PageContent } from 'components/Page';
-import LogoGorila from 'assets/images/logo-gorila.png';
-import Facebook from 'assets/images/social/facebook.png';
-import Linkedin from 'assets/images/social/linkedin.png';
-import Google from 'assets/images/social/google.png';
-import Text from 'components/Text';
-import { withTheme } from 'styled-components';
 import ImgDescript from 'components/ImgDescript';
 import Money from 'assets/images/icons/money.png';
 import MoneyGraph from 'assets/images/icons/moneyGraph.png';
 import Calc from 'assets/images/icons/calc.png';
 import { Wrapper } from './styles';
 
-const Initial = ({ theme }) => {
+const Initial = () => {
   const options = [
     {
       titleDescription: 'Faça seu Cadastro',
@@ -50,4 +44,4 @@ const Initial = ({ theme }) => {
   );
 };
 
-export default withTheme(Initial);
+export default Initial;
