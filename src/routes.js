@@ -3,6 +3,7 @@ import React from 'react';
 import Home from 'pages/LandingPage/Home';
 import Dashboard from 'pages/Admin/Dashboard';
 import Users from 'pages/Admin/Users';
+import ChatPage from 'pages/Admin/Chat';
 
 export const Routes = () => (
   <Router>
@@ -10,6 +11,7 @@ export const Routes = () => (
       <Route path="/" exact component={Home} />
       <Route path="/admin/dashboard" exact component={Dashboard} />
       <Route path="/admin/users" exact component={Users} />
+      <Route path="/admin/chat" exact component={ChatPage} />
     </Switch>
   </Router>
 );

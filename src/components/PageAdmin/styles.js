@@ -20,7 +20,7 @@ export const Content = styled.div`
 export const ContentBody = styled.div`
   margin: 0 auto;
   width: 100%;
-  padding: 40px 70px;
+  padding: ${(props) => (props.noPadding ? '0px' : '40px 70px')};
 `;
 
 export const Menu = styled.div`
@@ -30,7 +30,7 @@ export const Menu = styled.div`
   border-right: 1px solid ${Theme.admin.border};
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  align-items: center;
 `;
 
 export const MenuLink = styled(Link)`
@@ -66,4 +66,13 @@ export const Nav = styled.div`
 
 export const Title = styled.div`
   margin-bottom: 20px;
+`;
+
+export const SpacingMenu = styled.div`
+  margin-top: 70px;
+`;
+
+export const ImageLogo = styled.img`
+  width: 80%;
+  margin-top: 5px;
 `;
