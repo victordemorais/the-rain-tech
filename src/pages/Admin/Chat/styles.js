@@ -33,6 +33,10 @@ export const Image = styled.div`
   margin-left: 20px;
 `;
 
+export const Loading = styled.img`
+  width: 300px;
+`;
+
 export const Status = styled.div`
   position: absolute;
   width: 14px;
@@ -70,6 +74,14 @@ export const Message = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: ${(props) => (props.myUser ? 'flex-end' : 'flex-start')};
+`;
+
+export const Centralize = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const MessageText = styled.div`

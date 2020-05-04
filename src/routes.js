@@ -4,6 +4,9 @@ import Home from 'pages/LandingPage/Home';
 import Dashboard from 'pages/Admin/Dashboard';
 import Users from 'pages/Admin/Users';
 import ChatPage from 'pages/Admin/Chat';
+import { createBrowserHistory } from 'history';
+
+export const history = createBrowserHistory();
 
 export const Routes = () => (
   <Router>

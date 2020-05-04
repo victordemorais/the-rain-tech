@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageContent } from 'components/Page';
-import LogoGorila from 'assets/images/logo-gorila.png';
+import LogoTheRain from 'assets/images/logo.png';
 import Facebook from 'assets/images/social/facebook.png';
 import Linkedin from 'assets/images/social/linkedin.png';
 import Google from 'assets/images/social/google.png';
@@ -22,7 +22,7 @@ import {
 const Header = ({ theme }) => {
   return (
     <PageContent>
-      <Logo src={LogoGorila} />
+      <Logo src={LogoTheRain} />
       <Call>
         <Text size={55} bold color={theme.colors.primary}>
           Invista

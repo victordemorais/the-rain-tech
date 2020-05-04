@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Logo = styled.img`
   width: 288px;
+  margin-left: -10px;
   @media (max-width: 768px) {
     width: 240px;
   }

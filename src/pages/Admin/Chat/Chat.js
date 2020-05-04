@@ -2,6 +2,7 @@ import '@progress/kendo-theme-material/dist/all.css';
 import React, { Component } from 'react';
 import Chat from 'twilio-chat';
 import GirlMoney from 'assets/images/girlMoney.png';
+import loading from 'assets/images/loading.gif';
 import Text from 'components/Text';
 import { TiChevronLeft, TiArrowForwardOutline } from 'react-icons/ti';
 
@@ -19,6 +20,8 @@ import {
   WrapperInput,
   Icon,
   ChatMessages,
+  Loading,
+  Centralize,
 } from './styles';
 
 class ChatApp extends Component {
@@ -83,6 +86,7 @@ class ChatApp extends Component {
       })
       .then(() => {
         this.setState({ isLoading: false });
+        console.log(this.channel, 'this.chann');
         this.channel.getMessages().then(this.messagesLoaded);
         this.channel.on('messageAdded', this.messageAdded);
       })
@@ -131,7 +135,6 @@ class ChatApp extends Component {
 
   render() {
     const { messages, message, error, isLoading } = this.state;
-    console.log(messages, 'messages');
     return (
       <WrapperChat>
         <InfoUser>
@@ -147,6 +150,11 @@ class ChatApp extends Component {
             </Text>
           </InfoText>
         </InfoUser>
+        {isLoading && (
+          <Centralize>
+            <Loading src={loading} />
+          </Centralize>
+        )}
         <ChatRender>
           <ChatMessages>
             {messages.map((i) => {
