@@ -17,7 +17,30 @@ import {
   MarginAuto,
 } from './styles';
 
-const User = ({ gradient, theme }) => {
+const User = ({ gradient, theme, data }) => {
+  const openChat = (clicked) => {
+    const user = localStorage.getItem('user');
+    const idUser = localStorage.getItem('idUser');
+    localStorage.setItem('selectedUser', clicked.name);
+    const userProfessional = localStorage.getItem('userProfessional');
+    fetch('http://localhost:3333/chat', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        investor: user ? parseInt(idUser) : clicked.id,
+        professional: user ? clicked.id : parseInt(idUser),
+      }),
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        localStorage.setItem('sala', response.room);
+        history.push('chat');
+      });
+  };
+
   const [viewDetail, setViewDetail] = useState(false);
   return (
     <Wrapper>
@@ -26,11 +49,11 @@ const User = ({ gradient, theme }) => {
         <Image src={GirlMoney} />
         <WrapperText>
           <Text color={theme.admin.primary} size={18}>
-            Joana da silva
+            {data.name}
           </Text>
           <Spacing />
           <Text color={theme.admin.gray} size={12} light>
-            Perfil Arrojado
+            Perfil {data.investor_profile ? 'Moderado' : 'Arrojado'}
           </Text>
           <Spacing size={10} />
 
@@ -48,7 +71,7 @@ const User = ({ gradient, theme }) => {
               </Text>
               <Spacing />
               <Text color={theme.admin.gray} size={12} light>
-                teste@teste.com
+                {data.email}
               </Text>
             </Info>
             <Info>
@@ -57,7 +80,7 @@ const User = ({ gradient, theme }) => {
               </Text>
               <Spacing />
               <Text color={theme.admin.gray} size={12} light>
-                +55 (99) 9 9999-9999
+                {data.phone}
               </Text>
             </Info>
             <Info>
@@ -66,7 +89,7 @@ const User = ({ gradient, theme }) => {
               </Text>
               <Spacing />
               <Text color={theme.admin.gray} size={12} light>
-                São Paulo - SP
+                {`${data.city} - ${data.uf}`}
               </Text>
             </Info>
           </WrapperInfo>
@@ -82,7 +105,7 @@ const User = ({ gradient, theme }) => {
             textStyles={{
               color: '#fff',
             }}
-            onClick={() => history.push('chat')}
+            onClick={() => openChat(data)}
             value="Conversar"
           />
         </MarginAuto>

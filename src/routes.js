@@ -15,9 +15,9 @@ export const Routes = () => (
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/admin" exact component={SelectLogin} />
-        <Route path="/admin/dashboard/:user" component={Dashboard} />
-        <Route path="/admin/users/:user" component={Users} />
-        <Route path="/admin/chat/:user" component={ChatPage} />
+        <Route path="/admin/dashboard" component={Dashboard} />
+        <Route path="/admin/users" component={Users} />
+        <Route path="/admin/chat" component={ChatPage} />
       </Switch>
     </Router>
   </BrowserRouter>

@@ -23,6 +23,7 @@ import {
   Loading,
   Centralize,
 } from './styles';
+import { history } from '../../../routes';
 
 class ChatApp extends Component {
   constructor(props) {
@@ -69,13 +70,14 @@ class ChatApp extends Component {
   }
 
   setupChatClient(client) {
+    const sala = localStorage.getItem('sala');
     this.client = client;
     this.client
-      .getChannelByUniqueName('nomeSala')
+      .getChannelByUniqueName(sala)
       .then((channel) => channel)
       .catch((error) => {
         if (error.body.code === 50300) {
-          return this.client.createChannel({ uniqueName: 'nomeSala' });
+          return this.client.createChannel({ uniqueName: sala });
         }
         this.handleError(error);
         return error;
@@ -135,16 +137,18 @@ class ChatApp extends Component {
 
   render() {
     const { messages, message, error, isLoading } = this.state;
+    const selectedUser = localStorage.getItem('selectedUser');
+    console.log(selectedUser);
     return (
       <WrapperChat>
         <InfoUser>
-          <TiChevronLeft size={25} />
+          <TiChevronLeft size={25} onClick={() => history.push('users')} />
           <Image>
             <UserImage src={GirlMoney} />
             <Status />
           </Image>
           <InfoText>
-            <Text>Joana Darkson</Text>
+            <Text>{selectedUser || ''} </Text>
             <Text light size={12}>
               Online
             </Text>

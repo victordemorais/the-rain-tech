@@ -12,13 +12,19 @@ const SelectLogin = ({ theme }) => {
       'user',
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTg4NjM3NzgxLCJleHAiOjE1ODkyNDI1ODF9.AHQkKaPMX3JGVXDz0B172-XTfsW3R5L2Lods8xURzQ4'
     );
+    localStorage.setItem('idUser', '2');
+    localStorage.setItem('userProfessional', '');
+    history.push('/admin/dashboard');
   };
 
   const loginProfessional = () => {
+    localStorage.setItem('user', '');
+    localStorage.setItem('idUser', '1');
     localStorage.setItem(
       'userProfessional',
       'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNTg4NjM3NjYzLCJleHAiOjE1ODkyNDI0NjN9.qfx503Dmqj9pGshHr63ujGLmIBkORoEC6UQW9saVRcU'
     );
+    history.push('/admin/dashboard');
   };
 
   return (
