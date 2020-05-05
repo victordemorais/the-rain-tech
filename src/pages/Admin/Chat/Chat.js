@@ -34,10 +34,11 @@ class ChatApp extends Component {
       messages: [],
       message: '',
     };
+    const selectedUser = localStorage.getItem('selectedUser');
 
     this.user = {
-      id: props.username,
-      name: props.username,
+      id: selectedUser,
+      name: selectedUser,
     };
     this.messagesEndRef = React.createRef();
 
@@ -138,7 +139,6 @@ class ChatApp extends Component {
   render() {
     const { messages, message, error, isLoading } = this.state;
     const selectedUser = localStorage.getItem('selectedUser');
-    console.log(selectedUser);
     return (
       <WrapperChat>
         <InfoUser>
