@@ -2,29 +2,29 @@
   "acessor": [
     {
       "name": "Dashboard",
-      "route": "/dashboard"
+      "route": "dashboard"
     },
     {
       "name": "Usuários",
-      "route": "/users"
+      "route": "users"
     },
     {
       "name": "Agenda",
-      "route": "/schedules"
+      "route": "schedules"
     }
   ],
   "user": [
     {
       "name": "Dashboard",
-      "route": "/dashboard"
+      "route": "dashboard"
     },
     {
       "name": "Investidores",
-      "route": "/investors"
+      "route": "investors"
     },
     {
       "name": "Agenda",
-      "route": "/schedules"
+      "route": "schedules"
     }
   ]
 }

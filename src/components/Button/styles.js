@@ -26,7 +26,7 @@ export const ButtonPrimary = styled.input.attrs((props) => ({
   ${({ buttonStyles }) =>
     buttonStyles &&
     `
-  ${buttonStyles.background && `background-color: ${buttonStyles.background}`};
+  ${buttonStyles.background && `background: ${buttonStyles.background}`};
   ${buttonStyles.height && `height: ${buttonStyles.height}px`};
   ${buttonStyles.width && `width: ${buttonStyles.width}px`};
   ${buttonStyles.boxShadow && `box-shadow: ${buttonStyles.boxShadow}`};

@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 140px;
   background: ${Theme.admin.blank};
+`;
+
+export const MarginAuto = styled.div`
+  margin-left: auto;
+  margin-right: 30px;
 `;
 
 export const LinearGradient = styled.div`
@@ -41,6 +45,20 @@ export const WrapperText = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 24px;
+`;
+export const WrapperInfo = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -40px;
+`;
+
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
 `;
 
 export const MenuLink = styled(Link)`

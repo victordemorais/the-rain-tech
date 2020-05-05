@@ -72,6 +72,6 @@ export const SpacingMenu = styled.div`
 `;
 
 export const ImageLogo = styled.img`
-  width: 80%;
+  width: 60%;
   margin-top: 5px;
 `;

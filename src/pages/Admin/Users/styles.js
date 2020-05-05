@@ -13,5 +13,6 @@ export const GridUser = styled.div`
 `;
 
 export const Spacing = styled.div`
-  margin-bottom: 2%;
+  width: 10px;
+  height: 20px;
 `;
